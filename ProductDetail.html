@@ -21,20 +21,20 @@
             data.addColumn('number', 'Day');
             data.addColumn('number', 'Temperature');
             data.addRows([
-                [1, 8],
+                [1, 1],
                 [2, 1],
-                [3, -3],
-                [4, 5],
-                [5, 8],
-                [6, -7],
-                [7, 5],
-                [8, 2],
+                [3, -1],
+                [4, 0],
+                [5, 0],
+                [6, -1],
+                [7, 2],
+                [8, 1],
                 [9, -1],
                 [10, 1],
-                [11, 5.3],
-                [12, -6.6],
-                [13, 4.8],
-                [14, 4.2]
+                [11, 1],
+                [12, -0],
+                [13, 1],
+                [14, 1.5]
             ]);
 
             var options = {
@@ -98,7 +98,7 @@
 
 </head>
 
-<body  onload="menuController('productInformation')">
+<body onload="menuController('productInformation')">
 
     <div id="container">
         <!-- Navigation -->
@@ -146,9 +146,16 @@
                 </div>
                 <div class="col-xs-7">
                     <div id="productInformation">
+                        <h4>Food Description crab: <span class="widget">Crab</span></h4>
+                        <h4>Calories: <span class="widget">0.87</span></h4>
+                        <h4>Cholestrol in g: <span class="widget">0.78</span></h4>
+                        <h4>Protiens in g: <span class="widget">181</span></h4>
+                        <h4>Pottasium in g: <span class="widget">3.29</span></h4>
+                        <h4>Vitamin A in IU: <span class="widget">181</span></h4>
+                        <h4>Vitamin C in g: <span class="widget">50</span></h4>
+                        <h4>Calcium in g: <span class="widget">30</span></h4>
+                        <h4>Iron in g: <span class="widget">0.0074</span></h4>
                         <h4>Estimate expiry date: <span class="widget">7 April</span></h4>
-
-                        <h4>Location: </h4>
                         <h4>Weight:<span class="widget">1kg</span> </h4>
                         <h4>Current Price: <span class="widget">$20</span></h4>
                     </div>

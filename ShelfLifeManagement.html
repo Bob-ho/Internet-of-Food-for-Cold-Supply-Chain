@@ -48,15 +48,105 @@
             <div class="row">
                 <div class="col-xs-2"></div>
                 <div class="col-xs-8">
-                    <h2 style="text-align: center"> Estimate expiry Date </h2>
-                    <div id="buttonList">
+                    <h2>Product shelf life and price</h2>
+                    <!-- <h4>Total stock: <span class="widget">20</span></h4> -->
+                    <br>
+                    <h4>Select the product</h4>
 
+                    <div>
+                        <select name="updatePrice">
+                            <option value="crab">crab</option>
+                            <option value="oysters">oysters</option>
+                            <option value="scallops">scallops</option>
+
+                            <option value="wholeLobster">whole lobster</option>
+
+                            <option value="codHaddock">cod, haddock</option>
+
+                            <option value="flatfish">flatfish</option>
+                            <option value="lobster">lobster</option>
+                            <option value="smokedWhiteFish">smoked white fish</option>
+                        </select>
+                        <br>
+                        <h4>Price per Kg: <span class="widget">$20</span></h4>
+                    <br>
                     </div>
-                </div>
-                <div class="col-xs-2"></div>
-            </div>
+                    
+                    
+                    <table id="temperatureTable">
+                        <tr>
+                            <th>Temperature Celsius</th>
+                            <th>Estimate remain shelf life in (Hours)</th>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>-1</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>-2</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td>-3</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>-4</td>
+                            <td>100</td>
+                        </tr>
+                    </table>
+                    <br>
 
+                </div>
+            </div>
+            <div class="col-xs-2"></div>
         </div>
+
+
         <!-- End body -->
         <!-- Footer -->
         <div id="footer">
@@ -88,19 +178,17 @@
     console.log(dateArr);
 
     for (var i = 0; i <= dateArr.length; i++) {
-        if(i == dateArr.length)
-        {
-            var numberButton = createButton("Product that expired date");
+        if (i == dateArr.length) {
+            var numberButton = createButton("Quick sell");
         }
-        else
-        {
-            var numberButton = createButton(dateArr[i].getDate() + " / " +dateArr[i].getMonth());
+        else {
+            var numberButton = createButton(dateArr[i].getDate() + " / " + dateArr[i].getMonth());
 
         }
-        document.getElementById("buttonList").appendChild(numberButton);
+        //document.getElementById("buttonList").appendChild(numberButton);
         //Creat the anonymous function when the button click
-        //passing the color and the button element
-        expiredDate(dateArr[i], numberButton);
+        // passing the color and the button element
+        //expiredDate(dateArr[i], numberButton);
     }
 
     //Create the anonymous function when the button click
